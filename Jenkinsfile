@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo 'Installing Ansible...'
                 sh '''
-                if ! command -v ansible >/dev/null 2>&1; then
+                if ! command -v ansible >/slave1/null 2>&1; then
                     sudo apt update
                     sudo apt install -y ansible
                 fi
