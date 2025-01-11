@@ -1,5 +1,5 @@
 - name: Install grafana
-  yum:
+  apt:
     name: https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-{{ version }}-1.x86_64.rpm
     state: latest
 
@@ -17,6 +17,6 @@
 
 - name: "Check if Grafana is accessible."
   uri:
-    url: http://127.0.0.1:3000
+    url: http://172.31.6.136:3000
     method: GET
     status_code: 200
