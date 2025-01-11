@@ -9,7 +9,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo 'Cloning repository containing Ansible playbooks...'
-                git branch: 'main', url: 'https://github.com/shrikantashetty/PrometheusWithGrafana.git'
+                git branch: 'main', url: 'https://github.com/santhosh0811/PrometheusWithGrafana.git'
             }
         }
         stage('Install Ansible') {
